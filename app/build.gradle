@@ -1,0 +1,22 @@
+apply plugin: 'android'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 19
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:19.0.1'
+    compile 'pt.lighthouselabs.obd:obd-java-api:0.3'
+    compile 'org.roboguice:roboguice:3.0-alpha-1'
+}
